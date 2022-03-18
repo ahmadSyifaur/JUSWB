@@ -34,11 +34,18 @@ Partial Class AdministrationForm
         Me.btn_transactionList = New System.Windows.Forms.Button()
         Me.btn_dashboard = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.lbl_username = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PanelAdmin.SuspendLayout()
         Me.Sidebar.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelAdmin
@@ -214,22 +221,65 @@ Partial Class AdministrationForm
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.Panel3)
+        Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(3, 3)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(244, 122)
         Me.Panel1.TabIndex = 1
         '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.PictureBox1)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(244, 88)
+        Me.Panel3.TabIndex = 1
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.JUSWB.My.Resources.Resources.logo
-        Me.PictureBox1.Location = New System.Drawing.Point(40, 18)
+        Me.PictureBox1.Location = New System.Drawing.Point(44, 13)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(165, 87)
+        Me.PictureBox1.Size = New System.Drawing.Size(157, 62)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(233, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.lbl_username)
+        Me.Panel2.Controls.Add(Me.PictureBox2)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel2.Location = New System.Drawing.Point(0, 88)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        Me.Panel2.Size = New System.Drawing.Size(244, 34)
+        Me.Panel2.TabIndex = 0
+        '
+        'lbl_username
+        '
+        Me.lbl_username.AutoSize = True
+        Me.lbl_username.Font = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_username.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lbl_username.Location = New System.Drawing.Point(46, 9)
+        Me.lbl_username.Name = "lbl_username"
+        Me.lbl_username.Size = New System.Drawing.Size(67, 16)
+        Me.lbl_username.TabIndex = 64
+        Me.lbl_username.Text = "Username"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.JUSWB.My.Resources.Resources.i_user
+        Me.PictureBox2.Location = New System.Drawing.Point(15, 2)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(27, 29)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 63
+        Me.PictureBox2.TabStop = False
         '
         'AdministrationForm
         '
@@ -245,7 +295,11 @@ Partial Class AdministrationForm
         Me.PanelAdmin.ResumeLayout(False)
         Me.Sidebar.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -263,4 +317,8 @@ Partial Class AdministrationForm
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Content As Panel
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents lbl_username As Label
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

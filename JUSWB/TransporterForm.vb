@@ -14,7 +14,7 @@ Public Class TransporterForm
     End Function
 
     Private Sub TransporterForm_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Me.PanelInput.Hide()
+        Me.PanelInput.Visible = False
         checkbox_byName.Checked = True
 
         tb_search.CharacterCasing = CharacterCasing.Normal
@@ -62,8 +62,7 @@ Public Class TransporterForm
 
     'Header Control
     Private Sub btn_edit_Click(sender As Object, e As EventArgs) Handles btn_edit.Click
-        PanelInput.Show()
-        PanelInput.Show()
+        PanelInput.Visible = True
         tb_transporterCode.Text = CodeTrans
         tb_name.Text = NameTrans
         tb_address.Text = AddressTrans
@@ -73,7 +72,7 @@ Public Class TransporterForm
         btn_save.Text = "Update"
     End Sub
     Private Sub btn_add_Click(sender As Object, e As EventArgs) Handles btn_add.Click
-        PanelInput.Show()
+        PanelInput.Visible = True
         tb_transporterCode.Clear()
         tb_name.Clear()
         tb_address.Clear()
@@ -261,7 +260,7 @@ Public Class TransporterForm
         End If
     End Sub
     Private Sub btn_cancel_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
-        PanelInput.Hide()
+        PanelInput.Visible = False
     End Sub
     Private Sub tb_telpNo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tb_telpNo.KeyPress
         'code to only allow numeric input on the mobile phone textbox
@@ -316,7 +315,7 @@ Public Class TransporterForm
         SQLiteCon = Nothing
     End Sub
     Private Sub btn_search_Click(sender As Object, e As EventArgs) Handles btn_search.Click
-        Dim searchQuery As String
+        Dim searchQuery As String = ""
         If tb_search.Text = Nothing Then
             btn_refresh_Click(sender, e)
         Else
@@ -425,7 +424,7 @@ Public Class TransporterForm
         DataGridViewTable.ClearSelection()
         btn_delete.Enabled = False
         btn_edit.Enabled = False
-        PanelInput.Hide()
+        PanelInput.Visible = False
     End Sub
 
     'Button Style & Hover

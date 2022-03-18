@@ -46,7 +46,7 @@ Partial Class MainMenu
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.lbl_username = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.btn_logout = New System.Windows.Forms.Button()
@@ -393,23 +393,23 @@ Partial Class MainMenu
         'Panel5
         '
         Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Panel5.Controls.Add(Me.Label12)
+        Me.Panel5.Controls.Add(Me.lbl_username)
         Me.Panel5.Controls.Add(Me.PictureBox1)
         Me.Panel5.Location = New System.Drawing.Point(3, 600)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(169, 39)
         Me.Panel5.TabIndex = 61
         '
-        'Label12
+        'lbl_username
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label12.Location = New System.Drawing.Point(43, 11)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(67, 16)
-        Me.Label12.TabIndex = 62
-        Me.Label12.Text = "Username"
+        Me.lbl_username.AutoSize = True
+        Me.lbl_username.Font = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_username.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lbl_username.Location = New System.Drawing.Point(43, 11)
+        Me.lbl_username.Name = "lbl_username"
+        Me.lbl_username.Size = New System.Drawing.Size(67, 16)
+        Me.lbl_username.TabIndex = 62
+        Me.lbl_username.Text = "Username"
         '
         'PictureBox1
         '
@@ -822,5 +822,5 @@ Partial Class MainMenu
     Friend WithEvents Button9 As Button
     Friend WithEvents Panel5 As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label12 As Label
+    Friend WithEvents lbl_username As Label
 End Class

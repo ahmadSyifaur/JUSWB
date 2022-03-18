@@ -325,7 +325,7 @@ Public Class ProductForm
         SQLiteCon = Nothing
     End Sub
     Private Sub btn_search_Click(sender As Object, e As EventArgs) Handles btn_search.Click
-        Dim searchQuery As String
+        Dim searchQuery As String = ""
         If tb_search.Text = Nothing Then
             btn_refresh_Click(sender, e)
         Else
