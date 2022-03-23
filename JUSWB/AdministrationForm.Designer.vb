@@ -289,7 +289,7 @@ Partial Class AdministrationForm
         Me.Controls.Add(Me.PanelAdmin)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "AdministrationForm"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "AdministrationForm"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.PanelAdmin.ResumeLayout(False)

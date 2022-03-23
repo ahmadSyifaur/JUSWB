@@ -72,13 +72,265 @@ Namespace My
             End Get
         End Property
         
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("2")>  _
-        Public ReadOnly Property Unit() As Integer
+        Public Property Unit() As Integer
             Get
                 Return CType(Me("Unit"),Integer)
             End Get
+            Set
+                Me("Unit") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("10")>  _
+        Public ReadOnly Property FullAccess_level() As Integer
+            Get
+                Return CType(Me("FullAccess_level"),Integer)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_Administration() As Integer
+            Get
+                Return CType(Me("level_Administration"),Integer)
+            End Get
+            Set
+                Me("level_Administration") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_SettingsManagement() As Integer
+            Get
+                Return CType(Me("level_SettingsManagement"),Integer)
+            End Get
+            Set
+                Me("level_SettingsManagement") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_Administration_TransactionList() As Integer
+            Get
+                Return CType(Me("level_Administration_TransactionList"),Integer)
+            End Get
+            Set
+                Me("level_Administration_TransactionList") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_Administration_Transporter() As Integer
+            Get
+                Return CType(Me("level_Administration_Transporter"),Integer)
+            End Get
+            Set
+                Me("level_Administration_Transporter") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_Administration_Product() As Integer
+            Get
+                Return CType(Me("level_Administration_Product"),Integer)
+            End Get
+            Set
+                Me("level_Administration_Product") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_Administration_Vehicle() As Integer
+            Get
+                Return CType(Me("level_Administration_Vehicle"),Integer)
+            End Get
+            Set
+                Me("level_Administration_Vehicle") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_Administration_Operator() As Integer
+            Get
+                Return CType(Me("level_Administration_Operator"),Integer)
+            End Get
+            Set
+                Me("level_Administration_Operator") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_Administration_Customer() As Integer
+            Get
+                Return CType(Me("level_Administration_Customer"),Integer)
+            End Get
+            Set
+                Me("level_Administration_Customer") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_SettingsManagement_General() As Integer
+            Get
+                Return CType(Me("level_SettingsManagement_General"),Integer)
+            End Get
+            Set
+                Me("level_SettingsManagement_General") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_SettingsManagement_Application() As Integer
+            Get
+                Return CType(Me("level_SettingsManagement_Application"),Integer)
+            End Get
+            Set
+                Me("level_SettingsManagement_Application") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_SettingsManagement_Reports() As Integer
+            Get
+                Return CType(Me("level_SettingsManagement_Reports"),Integer)
+            End Get
+            Set
+                Me("level_SettingsManagement_Reports") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_SettingsManagement_Security() As Integer
+            Get
+                Return CType(Me("level_SettingsManagement_Security"),Integer)
+            End Get
+            Set
+                Me("level_SettingsManagement_Security") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_SettingsManagement_Database() As Integer
+            Get
+                Return CType(Me("level_SettingsManagement_Database"),Integer)
+            End Get
+            Set
+                Me("level_SettingsManagement_Database") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_Administration_TransactionList_Create() As Integer
+            Get
+                Return CType(Me("level_Administration_TransactionList_Create"),Integer)
+            End Get
+            Set
+                Me("level_Administration_TransactionList_Create") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_Administration_TransactionList_Edit() As Integer
+            Get
+                Return CType(Me("level_Administration_TransactionList_Edit"),Integer)
+            End Get
+            Set
+                Me("level_Administration_TransactionList_Edit") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_Administration_TransactionList_Delete() As Integer
+            Get
+                Return CType(Me("level_Administration_TransactionList_Delete"),Integer)
+            End Get
+            Set
+                Me("level_Administration_TransactionList_Delete") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_Administration_TransactionList_Backup() As Integer
+            Get
+                Return CType(Me("level_Administration_TransactionList_Backup"),Integer)
+            End Get
+            Set
+                Me("level_Administration_TransactionList_Backup") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_Administration_TransactionList_Restore() As Integer
+            Get
+                Return CType(Me("level_Administration_TransactionList_Restore"),Integer)
+            End Get
+            Set
+                Me("level_Administration_TransactionList_Restore") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_SettingsManagement_Database_Backup() As Integer
+            Get
+                Return CType(Me("level_SettingsManagement_Database_Backup"),Integer)
+            End Get
+            Set
+                Me("level_SettingsManagement_Database_Backup") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property level_SettingsManagement_Database_Restore() As Integer
+            Get
+                Return CType(Me("level_SettingsManagement_Database_Restore"),Integer)
+            End Get
+            Set
+                Me("level_SettingsManagement_Database_Restore") = value
+            End Set
         End Property
     End Class
 End Namespace

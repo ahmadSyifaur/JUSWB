@@ -14,6 +14,9 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -26,11 +29,8 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -124,12 +124,6 @@
     <Compile Include="LoginForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm1.Designer.vb">
-      <DependentUpon>LoginForm1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="LoginForm1.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
     </Compile>
@@ -142,6 +136,7 @@
     <Compile Include="MainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -157,10 +152,34 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="OperatorForm.Designer.vb">
+      <DependentUpon>OperatorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OperatorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ProductForm.Designer.vb">
       <DependentUpon>ProductForm.vb</DependentUpon>
     </Compile>
     <Compile Include="ProductForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityForm.Designer.vb">
+      <DependentUpon>SecurityForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecuritySubform.Designer.vb">
+      <DependentUpon>SecuritySubform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SecuritySubform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingForm.Designer.vb">
+      <DependentUpon>SettingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SplashScreen.Designer.vb">
@@ -192,9 +211,6 @@
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm1.resx">
-      <DependentUpon>LoginForm1.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -207,8 +223,20 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="OperatorForm.resx">
+      <DependentUpon>OperatorForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProductForm.resx">
       <DependentUpon>ProductForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityForm.resx">
+      <DependentUpon>SecurityForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecuritySubform.resx">
+      <DependentUpon>SecuritySubform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingForm.resx">
+      <DependentUpon>SettingForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
@@ -225,6 +253,7 @@
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
     </None>
     <None Include="My Project\DataSources\TransporterForm.datasource" />
     <None Include="My Project\Settings.settings">

@@ -25,10 +25,10 @@ Partial Class SplashScreen
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Version = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Version = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -40,6 +40,7 @@ Partial Class SplashScreen
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.ForeColor = System.Drawing.SystemColors.ActiveBorder
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel1.Name = "Panel1"
@@ -66,28 +67,6 @@ Partial Class SplashScreen
         Me.Panel2.Size = New System.Drawing.Size(496, 67)
         Me.Panel2.TabIndex = 1
         '
-        'Version
-        '
-        Me.Version.AutoSize = True
-        Me.Version.Font = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Version.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Version.Location = New System.Drawing.Point(12, 39)
-        Me.Version.Name = "Version"
-        Me.Version.Size = New System.Drawing.Size(76, 16)
-        Me.Version.TabIndex = 0
-        Me.Version.Text = "Version: 1.0"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(412, 39)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 16)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "© wawing"
-        '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer))
@@ -100,6 +79,17 @@ Partial Class SplashScreen
         Me.Panel3.Size = New System.Drawing.Size(496, 64)
         Me.Panel3.TabIndex = 1
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label2.Location = New System.Drawing.Point(412, 39)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(65, 16)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "© wawing"
+        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -111,6 +101,17 @@ Partial Class SplashScreen
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "JUSWB"
         '
+        'Version
+        '
+        Me.Version.AutoSize = True
+        Me.Version.Font = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Version.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Version.Location = New System.Drawing.Point(12, 39)
+        Me.Version.Name = "Version"
+        Me.Version.Size = New System.Drawing.Size(76, 16)
+        Me.Version.TabIndex = 0
+        Me.Version.Text = "Version: 1.0"
+        '
         'SplashScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -120,7 +121,7 @@ Partial Class SplashScreen
         Me.ControlBox = False
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "SplashScreen"

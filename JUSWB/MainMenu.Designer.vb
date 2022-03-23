@@ -46,6 +46,7 @@ Partial Class MainMenu
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.level = New System.Windows.Forms.Label()
         Me.lbl_username = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -393,12 +394,24 @@ Partial Class MainMenu
         'Panel5
         '
         Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Panel5.Controls.Add(Me.level)
         Me.Panel5.Controls.Add(Me.lbl_username)
         Me.Panel5.Controls.Add(Me.PictureBox1)
         Me.Panel5.Location = New System.Drawing.Point(3, 600)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(169, 39)
+        Me.Panel5.Size = New System.Drawing.Size(239, 39)
         Me.Panel5.TabIndex = 61
+        '
+        'level
+        '
+        Me.level.AutoSize = True
+        Me.level.Font = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.level.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.level.Location = New System.Drawing.Point(132, 11)
+        Me.level.Name = "level"
+        Me.level.Size = New System.Drawing.Size(67, 16)
+        Me.level.TabIndex = 62
+        Me.level.Text = "Username"
         '
         'lbl_username
         '
@@ -823,4 +836,5 @@ Partial Class MainMenu
     Friend WithEvents Panel5 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents lbl_username As Label
+    Friend WithEvents level As Label
 End Class

@@ -22,7 +22,6 @@ Partial Class VehicleForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.PanelVehicle = New System.Windows.Forms.Panel()
@@ -73,8 +72,6 @@ Partial Class VehicleForm
         Me.lbl_vehicleNumber = New System.Windows.Forms.Label()
         Me.lbl_inputSubTitle = New System.Windows.Forms.Label()
         Me.lbl_inputTitle = New System.Windows.Forms.Label()
-        Me.TransporterFormBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TransporterFormBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.PanelVehicle.SuspendLayout()
         Me.PanelContent.SuspendLayout()
         Me.PanelContainer.SuspendLayout()
@@ -87,8 +84,6 @@ Partial Class VehicleForm
         Me.PanelInput.SuspendLayout()
         Me.PanelTransporter.SuspendLayout()
         CType(Me.dataGridTransporter, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TransporterFormBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TransporterFormBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelVehicle
@@ -728,14 +723,6 @@ Partial Class VehicleForm
         Me.lbl_inputTitle.TabIndex = 0
         Me.lbl_inputTitle.Text = "ADD RECORD"
         '
-        'TransporterFormBindingSource
-        '
-        Me.TransporterFormBindingSource.DataSource = GetType(JUSWB.TransporterForm)
-        '
-        'TransporterFormBindingSource1
-        '
-        Me.TransporterFormBindingSource1.DataSource = GetType(JUSWB.TransporterForm)
-        '
         'VehicleForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -763,8 +750,6 @@ Partial Class VehicleForm
         Me.PanelInput.PerformLayout()
         Me.PanelTransporter.ResumeLayout(False)
         CType(Me.dataGridTransporter, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TransporterFormBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TransporterFormBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -816,7 +801,5 @@ Partial Class VehicleForm
     Friend WithEvents PanelFooter As Panel
     Friend WithEvents lbl_totalRecord As Label
     Friend WithEvents lbl_totalRecordValue As Label
-    Friend WithEvents TransporterFormBindingSource As BindingSource
-    Friend WithEvents TransporterFormBindingSource1 As BindingSource
     Friend WithEvents dataGridTransporter As DataGridView
 End Class
