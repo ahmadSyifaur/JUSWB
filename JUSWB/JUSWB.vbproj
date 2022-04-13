@@ -118,6 +118,18 @@
     <Compile Include="CustomerForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LoginForm.Designer.vb">
       <DependentUpon>LoginForm.vb</DependentUpon>
     </Compile>
@@ -182,10 +194,22 @@
     <Compile Include="SettingForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ShowTableForm.Designer.vb">
+      <DependentUpon>ShowTableForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ShowTableForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SplashScreen.Designer.vb">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </Compile>
     <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionList.Designer.vb">
+      <DependentUpon>TransactionList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionList.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TransporterForm.Designer.vb">
@@ -207,6 +231,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerForm.resx">
       <DependentUpon>CustomerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.vb</DependentUpon>
@@ -238,8 +268,14 @@
     <EmbeddedResource Include="SettingForm.resx">
       <DependentUpon>SettingForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ShowTableForm.resx">
+      <DependentUpon>ShowTableForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionList.resx">
+      <DependentUpon>TransactionList.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransporterForm.resx">
       <DependentUpon>TransporterForm.vb</DependentUpon>

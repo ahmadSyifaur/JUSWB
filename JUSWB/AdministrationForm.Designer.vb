@@ -35,16 +35,16 @@ Partial Class AdministrationForm
         Me.btn_dashboard = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.lbl_username = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PanelAdmin.SuspendLayout()
         Me.Sidebar.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -110,6 +110,7 @@ Partial Class AdministrationForm
         '
         Me.btn_customer.Dock = System.Windows.Forms.DockStyle.Top
         Me.btn_customer.FlatAppearance.BorderSize = 0
+        Me.btn_customer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(233, Byte), Integer))
         Me.btn_customer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_customer.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_customer.ForeColor = System.Drawing.SystemColors.ButtonFace
@@ -126,6 +127,7 @@ Partial Class AdministrationForm
         '
         Me.btn_operator.Dock = System.Windows.Forms.DockStyle.Top
         Me.btn_operator.FlatAppearance.BorderSize = 0
+        Me.btn_operator.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(233, Byte), Integer))
         Me.btn_operator.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_operator.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_operator.ForeColor = System.Drawing.SystemColors.ButtonFace
@@ -142,6 +144,7 @@ Partial Class AdministrationForm
         '
         Me.btn_vehicle.Dock = System.Windows.Forms.DockStyle.Top
         Me.btn_vehicle.FlatAppearance.BorderSize = 0
+        Me.btn_vehicle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(233, Byte), Integer))
         Me.btn_vehicle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_vehicle.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_vehicle.ForeColor = System.Drawing.SystemColors.ButtonFace
@@ -158,6 +161,7 @@ Partial Class AdministrationForm
         '
         Me.btn_product.Dock = System.Windows.Forms.DockStyle.Top
         Me.btn_product.FlatAppearance.BorderSize = 0
+        Me.btn_product.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(233, Byte), Integer))
         Me.btn_product.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_product.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_product.ForeColor = System.Drawing.SystemColors.ButtonFace
@@ -174,6 +178,7 @@ Partial Class AdministrationForm
         '
         Me.btn_transporter.Dock = System.Windows.Forms.DockStyle.Top
         Me.btn_transporter.FlatAppearance.BorderSize = 0
+        Me.btn_transporter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(233, Byte), Integer))
         Me.btn_transporter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_transporter.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_transporter.ForeColor = System.Drawing.SystemColors.ButtonFace
@@ -206,6 +211,7 @@ Partial Class AdministrationForm
         '
         Me.btn_dashboard.Dock = System.Windows.Forms.DockStyle.Top
         Me.btn_dashboard.FlatAppearance.BorderSize = 0
+        Me.btn_dashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(233, Byte), Integer))
         Me.btn_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_dashboard.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_dashboard.ForeColor = System.Drawing.SystemColors.ButtonFace
@@ -238,16 +244,6 @@ Partial Class AdministrationForm
         Me.Panel3.Size = New System.Drawing.Size(244, 88)
         Me.Panel3.TabIndex = 1
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.JUSWB.My.Resources.Resources.logo
-        Me.PictureBox1.Location = New System.Drawing.Point(44, 13)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(157, 62)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(233, Byte), Integer))
@@ -270,6 +266,16 @@ Partial Class AdministrationForm
         Me.lbl_username.Size = New System.Drawing.Size(67, 16)
         Me.lbl_username.TabIndex = 64
         Me.lbl_username.Text = "Username"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.JUSWB.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(44, 13)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(157, 62)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'PictureBox2
         '
@@ -296,9 +302,9 @@ Partial Class AdministrationForm
         Me.Sidebar.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

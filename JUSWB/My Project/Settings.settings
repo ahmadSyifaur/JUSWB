@@ -3,10 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="FullAccess_User" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">TEKNISI</Value>
+      <Value Profile="(Default)">A</Value>
     </Setting>
     <Setting Name="FullAccess_Pass" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">TEKNISIPWD</Value>
+      <Value Profile="(Default)">A</Value>
     </Setting>
     <Setting Name="Unit" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>

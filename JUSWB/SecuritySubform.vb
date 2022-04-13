@@ -28,7 +28,7 @@ Public Class SecuritySubform
         tb_database_restore_level.Text = My.Settings.level_SettingsManagement_Database_Restore
     End Sub
 
-    Public Function Save()
+    Public Sub Save()
 
         My.Settings.level_Administration = tb_administrator_level.Text
         My.Settings.level_SettingsManagement = tb_SettingsManagement_level.Text
@@ -56,7 +56,7 @@ Public Class SecuritySubform
         My.Settings.level_SettingsManagement_Database_Restore = tb_database_restore_level.Text
 
         My.Settings.Save()
-    End Function
+    End Sub
 
     'GENERAL
     'Administration

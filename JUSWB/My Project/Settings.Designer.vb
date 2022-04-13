@@ -56,7 +56,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("TEKNISI")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("A")>  _
         Public ReadOnly Property FullAccess_User() As String
             Get
                 Return CType(Me("FullAccess_User"),String)
@@ -65,7 +65,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("TEKNISIPWD")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("A")>  _
         Public ReadOnly Property FullAccess_Pass() As String
             Get
                 Return CType(Me("FullAccess_Pass"),String)

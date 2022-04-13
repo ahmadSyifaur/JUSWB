@@ -432,6 +432,7 @@ Public Class VehicleForm
         SQLiteCon.Dispose()
         SQLiteCon = Nothing
     End Sub
+
     Private Sub btn_search_Click(sender As Object, e As EventArgs) Handles btn_search.Click
         Dim searchQuery As String = ""
         If tb_search.Text = Nothing Then

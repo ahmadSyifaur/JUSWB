@@ -23,27 +23,27 @@ Partial Class MainMenu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.btn_clear = New System.Windows.Forms.Button()
+        Me.tb_driverName = New System.Windows.Forms.TextBox()
+        Me.tb_weightValue = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.tb_remark = New System.Windows.Forms.TextBox()
         Me.btn_pending = New System.Windows.Forms.Button()
         Me.btn_showProduct = New System.Windows.Forms.Button()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox_product = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.btn_showCustomer = New System.Windows.Forms.Button()
         Me.btn_showTransporter = New System.Windows.Forms.Button()
         Me.btn_showVehicle = New System.Windows.Forms.Button()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox_customer = New System.Windows.Forms.ComboBox()
+        Me.ComboBox_transporter = New System.Windows.Forms.ComboBox()
+        Me.ComboBox_vehicle = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.tb_Ticket = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.level = New System.Windows.Forms.Label()
@@ -60,19 +60,19 @@ Partial Class MainMenu
         Me.Label13 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Button7 = New System.Windows.Forms.Button()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Group_1stWeigh = New System.Windows.Forms.GroupBox()
+        Me.btn_getWeight1 = New System.Windows.Forms.Button()
+        Me.ComboBox_1unit = New System.Windows.Forms.ComboBox()
+        Me.tb_date1 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.tb_weight1 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Group_2ndWeigh = New System.Windows.Forms.GroupBox()
+        Me.ComboBox_2unit = New System.Windows.Forms.ComboBox()
+        Me.btn_getWeight2 = New System.Windows.Forms.Button()
+        Me.tb_date2 = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.tb_weight2 = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -83,8 +83,8 @@ Partial Class MainMenu
         Me.Panel1.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
+        Me.Group_1stWeigh.SuspendLayout()
+        Me.Group_2ndWeigh.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -92,27 +92,27 @@ Partial Class MainMenu
         Me.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.GroupBox1.AutoSize = True
         Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer))
-        Me.GroupBox1.Controls.Add(Me.Button9)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.btn_clear)
+        Me.GroupBox1.Controls.Add(Me.tb_driverName)
+        Me.GroupBox1.Controls.Add(Me.tb_weightValue)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.tb_remark)
         Me.GroupBox1.Controls.Add(Me.btn_pending)
         Me.GroupBox1.Controls.Add(Me.btn_showProduct)
-        Me.GroupBox1.Controls.Add(Me.ComboBox4)
+        Me.GroupBox1.Controls.Add(Me.ComboBox_product)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.btn_showCustomer)
         Me.GroupBox1.Controls.Add(Me.btn_showTransporter)
         Me.GroupBox1.Controls.Add(Me.btn_showVehicle)
-        Me.GroupBox1.Controls.Add(Me.ComboBox3)
-        Me.GroupBox1.Controls.Add(Me.ComboBox2)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.ComboBox_customer)
+        Me.GroupBox1.Controls.Add(Me.ComboBox_transporter)
+        Me.GroupBox1.Controls.Add(Me.ComboBox_vehicle)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.tb_Ticket)
         Me.GroupBox1.Font = New System.Drawing.Font("Lato", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.GroupBox1.Location = New System.Drawing.Point(40, 10)
@@ -123,38 +123,38 @@ Partial Class MainMenu
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Transaction"
         '
-        'Button9
+        'btn_clear
         '
-        Me.Button9.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button9.BackColor = System.Drawing.Color.DarkGoldenrod
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button9.Location = New System.Drawing.Point(392, 315)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(263, 56)
-        Me.Button9.TabIndex = 63
-        Me.Button9.Text = "Clear"
-        Me.Button9.UseVisualStyleBackColor = False
+        Me.btn_clear.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btn_clear.BackColor = System.Drawing.Color.DarkGoldenrod
+        Me.btn_clear.FlatAppearance.BorderSize = 0
+        Me.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_clear.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_clear.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btn_clear.Location = New System.Drawing.Point(392, 315)
+        Me.btn_clear.Name = "btn_clear"
+        Me.btn_clear.Size = New System.Drawing.Size(263, 56)
+        Me.btn_clear.TabIndex = 63
+        Me.btn_clear.Text = "Clear"
+        Me.btn_clear.UseVisualStyleBackColor = False
         '
-        'TextBox4
+        'tb_driverName
         '
-        Me.TextBox4.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(392, 253)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(263, 29)
-        Me.TextBox4.TabIndex = 62
+        Me.tb_driverName.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.tb_driverName.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tb_driverName.Location = New System.Drawing.Point(392, 253)
+        Me.tb_driverName.Name = "tb_driverName"
+        Me.tb_driverName.Size = New System.Drawing.Size(263, 29)
+        Me.tb_driverName.TabIndex = 62
         '
-        'TextBox1
+        'tb_weightValue
         '
-        Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(392, 61)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(263, 80)
-        Me.TextBox1.TabIndex = 44
+        Me.tb_weightValue.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.tb_weightValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tb_weightValue.Location = New System.Drawing.Point(392, 61)
+        Me.tb_weightValue.Name = "tb_weightValue"
+        Me.tb_weightValue.Size = New System.Drawing.Size(263, 80)
+        Me.tb_weightValue.TabIndex = 44
         '
         'Label6
         '
@@ -180,14 +180,16 @@ Partial Class MainMenu
         Me.Label7.TabIndex = 60
         Me.Label7.Text = "Remark"
         '
-        'TextBox3
+        'tb_remark
         '
-        Me.TextBox3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(392, 184)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(263, 29)
-        Me.TextBox3.TabIndex = 59
+        Me.tb_remark.AccessibleName = "REMARK"
+        Me.tb_remark.AccessibleRole = System.Windows.Forms.AccessibleRole.Text
+        Me.tb_remark.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.tb_remark.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tb_remark.Location = New System.Drawing.Point(392, 184)
+        Me.tb_remark.Name = "tb_remark"
+        Me.tb_remark.Size = New System.Drawing.Size(263, 29)
+        Me.tb_remark.TabIndex = 59
         '
         'btn_pending
         '
@@ -219,15 +221,15 @@ Partial Class MainMenu
         Me.btn_showProduct.Text = "Show"
         Me.btn_showProduct.UseVisualStyleBackColor = False
         '
-        'ComboBox4
+        'ComboBox_product
         '
-        Me.ComboBox4.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ComboBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(18, 339)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(260, 32)
-        Me.ComboBox4.TabIndex = 56
+        Me.ComboBox_product.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ComboBox_product.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox_product.FormattingEnabled = True
+        Me.ComboBox_product.Location = New System.Drawing.Point(18, 339)
+        Me.ComboBox_product.Name = "ComboBox_product"
+        Me.ComboBox_product.Size = New System.Drawing.Size(260, 32)
+        Me.ComboBox_product.TabIndex = 56
         '
         'Label5
         '
@@ -286,35 +288,35 @@ Partial Class MainMenu
         Me.btn_showVehicle.Text = "Show"
         Me.btn_showVehicle.UseVisualStyleBackColor = False
         '
-        'ComboBox3
+        'ComboBox_customer
         '
-        Me.ComboBox3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ComboBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(18, 269)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(260, 32)
-        Me.ComboBox3.TabIndex = 51
+        Me.ComboBox_customer.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ComboBox_customer.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox_customer.FormattingEnabled = True
+        Me.ComboBox_customer.Location = New System.Drawing.Point(18, 269)
+        Me.ComboBox_customer.Name = "ComboBox_customer"
+        Me.ComboBox_customer.Size = New System.Drawing.Size(260, 32)
+        Me.ComboBox_customer.TabIndex = 51
         '
-        'ComboBox2
+        'ComboBox_transporter
         '
-        Me.ComboBox2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(18, 199)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(260, 32)
-        Me.ComboBox2.TabIndex = 50
+        Me.ComboBox_transporter.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ComboBox_transporter.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox_transporter.FormattingEnabled = True
+        Me.ComboBox_transporter.Location = New System.Drawing.Point(18, 199)
+        Me.ComboBox_transporter.Name = "ComboBox_transporter"
+        Me.ComboBox_transporter.Size = New System.Drawing.Size(260, 32)
+        Me.ComboBox_transporter.TabIndex = 50
         '
-        'ComboBox1
+        'ComboBox_vehicle
         '
-        Me.ComboBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(18, 127)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(260, 32)
-        Me.ComboBox1.TabIndex = 49
+        Me.ComboBox_vehicle.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ComboBox_vehicle.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox_vehicle.FormattingEnabled = True
+        Me.ComboBox_vehicle.Location = New System.Drawing.Point(18, 127)
+        Me.ComboBox_vehicle.Name = "ComboBox_vehicle"
+        Me.ComboBox_vehicle.Size = New System.Drawing.Size(260, 32)
+        Me.ComboBox_vehicle.TabIndex = 49
         '
         'Label4
         '
@@ -364,14 +366,14 @@ Partial Class MainMenu
         Me.Label1.TabIndex = 45
         Me.Label1.Text = "Ticket Number"
         '
-        'TextBox2
+        'tb_Ticket
         '
-        Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(18, 61)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(219, 29)
-        Me.TextBox2.TabIndex = 43
+        Me.tb_Ticket.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.tb_Ticket.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tb_Ticket.Location = New System.Drawing.Point(18, 61)
+        Me.tb_Ticket.Name = "tb_Ticket"
+        Me.tb_Ticket.Size = New System.Drawing.Size(219, 29)
+        Me.tb_Ticket.TabIndex = 43
         '
         'Panel2
         '
@@ -554,8 +556,8 @@ Partial Class MainMenu
         Me.GroupBox3.AutoSize = True
         Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer))
         Me.GroupBox3.Controls.Add(Me.Button7)
-        Me.GroupBox3.Controls.Add(Me.GroupBox2)
-        Me.GroupBox3.Controls.Add(Me.GroupBox4)
+        Me.GroupBox3.Controls.Add(Me.Group_1stWeigh)
+        Me.GroupBox3.Controls.Add(Me.Group_2ndWeigh)
         Me.GroupBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.GroupBox3.Location = New System.Drawing.Point(749, 10)
         Me.GroupBox3.Name = "GroupBox3"
@@ -581,58 +583,57 @@ Partial Class MainMenu
         Me.Button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button7.UseVisualStyleBackColor = False
         '
-        'GroupBox2
+        'Group_1stWeigh
         '
-        Me.GroupBox2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer))
-        Me.GroupBox2.Controls.Add(Me.Button5)
-        Me.GroupBox2.Controls.Add(Me.ComboBox5)
-        Me.GroupBox2.Controls.Add(Me.TextBox6)
-        Me.GroupBox2.Controls.Add(Me.Label9)
-        Me.GroupBox2.Controls.Add(Me.TextBox5)
-        Me.GroupBox2.Controls.Add(Me.Label8)
-        Me.GroupBox2.Font = New System.Drawing.Font("Lato", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.GroupBox2.Location = New System.Drawing.Point(25, 30)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(406, 169)
-        Me.GroupBox2.TabIndex = 57
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "1st Weighing"
+        Me.Group_1stWeigh.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Group_1stWeigh.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer))
+        Me.Group_1stWeigh.Controls.Add(Me.btn_getWeight1)
+        Me.Group_1stWeigh.Controls.Add(Me.ComboBox_1unit)
+        Me.Group_1stWeigh.Controls.Add(Me.tb_date1)
+        Me.Group_1stWeigh.Controls.Add(Me.Label9)
+        Me.Group_1stWeigh.Controls.Add(Me.tb_weight1)
+        Me.Group_1stWeigh.Controls.Add(Me.Label8)
+        Me.Group_1stWeigh.Font = New System.Drawing.Font("Lato", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Group_1stWeigh.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Group_1stWeigh.Location = New System.Drawing.Point(25, 30)
+        Me.Group_1stWeigh.Name = "Group_1stWeigh"
+        Me.Group_1stWeigh.Size = New System.Drawing.Size(406, 169)
+        Me.Group_1stWeigh.TabIndex = 57
+        Me.Group_1stWeigh.TabStop = False
+        Me.Group_1stWeigh.Text = "1st Weighing"
         '
-        'Button5
+        'btn_getWeight1
         '
-        Me.Button5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(99, Byte), Integer))
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button5.Location = New System.Drawing.Point(243, 97)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(142, 52)
-        Me.Button5.TabIndex = 37
-        Me.Button5.Text = "Get Weight"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.btn_getWeight1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btn_getWeight1.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.btn_getWeight1.FlatAppearance.BorderSize = 0
+        Me.btn_getWeight1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_getWeight1.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_getWeight1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btn_getWeight1.Location = New System.Drawing.Point(243, 97)
+        Me.btn_getWeight1.Name = "btn_getWeight1"
+        Me.btn_getWeight1.Size = New System.Drawing.Size(142, 52)
+        Me.btn_getWeight1.TabIndex = 37
+        Me.btn_getWeight1.Text = "Get Weight"
+        Me.btn_getWeight1.UseVisualStyleBackColor = False
         '
-        'ComboBox5
+        'ComboBox_1unit
         '
-        Me.ComboBox5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ComboBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(243, 51)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(67, 28)
-        Me.ComboBox5.TabIndex = 37
+        Me.ComboBox_1unit.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox_1unit.FormattingEnabled = True
+        Me.ComboBox_1unit.Location = New System.Drawing.Point(243, 51)
+        Me.ComboBox_1unit.Name = "ComboBox_1unit"
+        Me.ComboBox_1unit.Size = New System.Drawing.Size(73, 27)
+        Me.ComboBox_1unit.TabIndex = 41
         '
-        'TextBox6
+        'tb_date1
         '
-        Me.TextBox6.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(19, 120)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(209, 29)
-        Me.TextBox6.TabIndex = 40
+        Me.tb_date1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.tb_date1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tb_date1.Location = New System.Drawing.Point(19, 120)
+        Me.tb_date1.Name = "tb_date1"
+        Me.tb_date1.Size = New System.Drawing.Size(209, 29)
+        Me.tb_date1.TabIndex = 40
         '
         'Label9
         '
@@ -646,14 +647,14 @@ Partial Class MainMenu
         Me.Label9.TabIndex = 39
         Me.Label9.Text = "Date"
         '
-        'TextBox5
+        'tb_weight1
         '
-        Me.TextBox5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(19, 51)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(209, 29)
-        Me.TextBox5.TabIndex = 38
+        Me.tb_weight1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.tb_weight1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tb_weight1.Location = New System.Drawing.Point(19, 51)
+        Me.tb_weight1.Name = "tb_weight1"
+        Me.tb_weight1.Size = New System.Drawing.Size(209, 29)
+        Me.tb_weight1.TabIndex = 38
         '
         'Label8
         '
@@ -667,58 +668,57 @@ Partial Class MainMenu
         Me.Label8.TabIndex = 37
         Me.Label8.Text = "Weight"
         '
-        'GroupBox4
+        'Group_2ndWeigh
         '
-        Me.GroupBox4.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer))
-        Me.GroupBox4.Controls.Add(Me.Button6)
-        Me.GroupBox4.Controls.Add(Me.ComboBox6)
-        Me.GroupBox4.Controls.Add(Me.TextBox7)
-        Me.GroupBox4.Controls.Add(Me.Label10)
-        Me.GroupBox4.Controls.Add(Me.TextBox8)
-        Me.GroupBox4.Controls.Add(Me.Label11)
-        Me.GroupBox4.Font = New System.Drawing.Font("Lato", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.GroupBox4.Location = New System.Drawing.Point(25, 220)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(406, 165)
-        Me.GroupBox4.TabIndex = 59
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "2nd Weighing"
+        Me.Group_2ndWeigh.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Group_2ndWeigh.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer))
+        Me.Group_2ndWeigh.Controls.Add(Me.ComboBox_2unit)
+        Me.Group_2ndWeigh.Controls.Add(Me.btn_getWeight2)
+        Me.Group_2ndWeigh.Controls.Add(Me.tb_date2)
+        Me.Group_2ndWeigh.Controls.Add(Me.Label10)
+        Me.Group_2ndWeigh.Controls.Add(Me.tb_weight2)
+        Me.Group_2ndWeigh.Controls.Add(Me.Label11)
+        Me.Group_2ndWeigh.Font = New System.Drawing.Font("Lato", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Group_2ndWeigh.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Group_2ndWeigh.Location = New System.Drawing.Point(25, 220)
+        Me.Group_2ndWeigh.Name = "Group_2ndWeigh"
+        Me.Group_2ndWeigh.Size = New System.Drawing.Size(406, 165)
+        Me.Group_2ndWeigh.TabIndex = 59
+        Me.Group_2ndWeigh.TabStop = False
+        Me.Group_2ndWeigh.Text = "2nd Weighing"
         '
-        'Button6
+        'ComboBox_2unit
         '
-        Me.Button6.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(99, Byte), Integer))
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button6.Location = New System.Drawing.Point(243, 96)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(142, 52)
-        Me.Button6.TabIndex = 37
-        Me.Button6.Text = "Get Weight"
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.ComboBox_2unit.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox_2unit.FormattingEnabled = True
+        Me.ComboBox_2unit.Location = New System.Drawing.Point(243, 49)
+        Me.ComboBox_2unit.Name = "ComboBox_2unit"
+        Me.ComboBox_2unit.Size = New System.Drawing.Size(73, 27)
+        Me.ComboBox_2unit.TabIndex = 41
         '
-        'ComboBox6
+        'btn_getWeight2
         '
-        Me.ComboBox6.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ComboBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Location = New System.Drawing.Point(243, 49)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(60, 28)
-        Me.ComboBox6.TabIndex = 37
+        Me.btn_getWeight2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btn_getWeight2.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.btn_getWeight2.FlatAppearance.BorderSize = 0
+        Me.btn_getWeight2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_getWeight2.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_getWeight2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btn_getWeight2.Location = New System.Drawing.Point(243, 96)
+        Me.btn_getWeight2.Name = "btn_getWeight2"
+        Me.btn_getWeight2.Size = New System.Drawing.Size(142, 52)
+        Me.btn_getWeight2.TabIndex = 37
+        Me.btn_getWeight2.Text = "Get Weight"
+        Me.btn_getWeight2.UseVisualStyleBackColor = False
         '
-        'TextBox7
+        'tb_date2
         '
-        Me.TextBox7.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(19, 119)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(209, 29)
-        Me.TextBox7.TabIndex = 40
+        Me.tb_date2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.tb_date2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tb_date2.Location = New System.Drawing.Point(19, 119)
+        Me.tb_date2.Name = "tb_date2"
+        Me.tb_date2.Size = New System.Drawing.Size(209, 29)
+        Me.tb_date2.TabIndex = 40
         '
         'Label10
         '
@@ -732,14 +732,14 @@ Partial Class MainMenu
         Me.Label10.TabIndex = 39
         Me.Label10.Text = "Date"
         '
-        'TextBox8
+        'tb_weight2
         '
-        Me.TextBox8.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(19, 49)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(209, 29)
-        Me.TextBox8.TabIndex = 38
+        Me.tb_weight2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.tb_weight2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tb_weight2.Location = New System.Drawing.Point(19, 49)
+        Me.tb_weight2.Name = "tb_weight2"
+        Me.tb_weight2.Size = New System.Drawing.Size(209, 29)
+        Me.tb_weight2.TabIndex = 38
         '
         'Label11
         '
@@ -777,64 +777,64 @@ Partial Class MainMenu
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox5.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
+        Me.Group_1stWeigh.ResumeLayout(False)
+        Me.Group_1stWeigh.PerformLayout()
+        Me.Group_2ndWeigh.ResumeLayout(False)
+        Me.Group_2ndWeigh.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents btn_setting As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents tb_weightValue As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents btn_pending As Button
     Friend WithEvents btn_showProduct As Button
-    Friend WithEvents ComboBox4 As ComboBox
     Friend WithEvents Label5 As Label
     Friend WithEvents btn_showCustomer As Button
     Friend WithEvents btn_showTransporter As Button
     Friend WithEvents btn_showVehicle As Button
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Panel2 As Panel
     Friend WithEvents GroupBox5 As GroupBox
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents Label13 As Label
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents Button7 As Button
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Button5 As Button
-    Friend WithEvents ComboBox5 As ComboBox
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents Group_1stWeigh As GroupBox
+    Friend WithEvents btn_getWeight1 As Button
+    Friend WithEvents tb_date1 As TextBox
     Friend WithEvents Label9 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents tb_weight1 As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents Button6 As Button
-    Friend WithEvents ComboBox6 As ComboBox
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents Group_2ndWeigh As GroupBox
+    Friend WithEvents btn_getWeight2 As Button
+    Friend WithEvents tb_date2 As TextBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents tb_weight2 As TextBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel4 As Panel
     Friend WithEvents btn_logout As Button
     Friend WithEvents Panel3 As Panel
     Friend WithEvents btn_admin As Button
-    Friend WithEvents Button9 As Button
+    Friend WithEvents btn_clear As Button
     Friend WithEvents Panel5 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents lbl_username As Label
     Friend WithEvents level As Label
+    Friend WithEvents ComboBox_1unit As ComboBox
+    Friend WithEvents ComboBox_2unit As ComboBox
+    Public WithEvents tb_driverName As TextBox
+    Public WithEvents tb_remark As TextBox
+    Public WithEvents ComboBox_product As ComboBox
+    Public WithEvents ComboBox_customer As ComboBox
+    Public WithEvents ComboBox_transporter As ComboBox
+    Public WithEvents ComboBox_vehicle As ComboBox
+    Public WithEvents tb_Ticket As TextBox
 End Class
